@@ -1,0 +1,10 @@
+﻿{
+    "editable": [
+        "src/Arrays.cs"
+    ],
+    "excludes": [
+        ".gitignore",
+        "challenge.json"
+    ],
+    "test": "nunit-console target/SimpleArrays.dll"
+}
