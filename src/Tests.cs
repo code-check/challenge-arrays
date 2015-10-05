@@ -28,7 +28,7 @@ namespace SimpleArrays.src
         public void Test100to200()
         {
             Assert.AreEqual(15150, Arrays.Get100to200().Sum(), "The sum of the numbers 100 to 200 seems to be incorrect");
-            Assert.AreEqual(100, Arrays.Get100to200().Count(), "The count of the numbers 100 to 200 seems to be incorrect");
+            Assert.AreEqual(101, Arrays.Get100to200().Count(), "The count of the numbers 100 to 200 seems to be incorrect");
         }
 
         [Test]
@@ -39,7 +39,7 @@ namespace SimpleArrays.src
             {
                 var array = tArray as int[][];
                 Assert.DoesNotThrow(() => array[9][9] = 0);
-                Assert.AreEqual(100, array.SelectMany(x => x).Count(), "There should be a total of 100 items in the array");
+                Assert.AreEqual(100, array.SelectMany(x => x).Count(), "The total count of items was not the expected amount");
             }
             else 
             {
@@ -47,7 +47,7 @@ namespace SimpleArrays.src
 
                 var array = tArray as int[,];
                 Assert.DoesNotThrow(() => array[9, 9] = 0);
-                Assert.AreEqual(100, array.Length, "There should be a total of 100 items in the array");
+                Assert.AreEqual(100, array.Length, "The total count of items was not the expected amount");
             }
         }
     }
