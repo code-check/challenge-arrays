@@ -6,5 +6,8 @@
         ".gitignore",
         "challenge.json"
     ],
-    "test": "nunit-console target/SimpleArrays.dll"
+    "test": "nunit-console target/SimpleArrays.dll",
+    "tags": [
+        "C#",
+    ]
 }
